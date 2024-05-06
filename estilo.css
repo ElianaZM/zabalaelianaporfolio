@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    box-sizing: border-box;
+    font-family:'Work Sans';
+    margin: 0;
+    padding: 0;
+}
+.navbar-nav {
+        display: flex;
+        align-items: center;
+    }
+    .nav-item {
+        margin-right: 15px;
+    }
+    .navbar-custom {
+        background-color: #32fbe2; 
+    }
+.menu header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.menu ul{
+    display: flex;
+    list-style: none;
+}
+
+.menu header ul li a{
+    text-align: none;
+    margin: 0 15px;
+    padding: 3px;
+    transition: 5s;
+    text-decoration: none;
+}
+
+.inicio{
+    background-image: linear-gradient(#17082e 0, #1a0933 5%, #1a0933 50%, #0c1f4c 100%);
+    height: 100vh;
+    display:flex;
+    align-items: center;
+}
+.inicio .contenido{
+    padding: 20px;
+    background-color: #30115e;
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+.inicio .contenido img {
+    margin-top: 40px;
+    border: 10px solid #170229;
+    display: block;
+    width: 85%;
+    margin: auto;
+    border-radius: 100%;
+    box-shadow: 0 0 10px #32fbe2
+}
+.inicio .contenido h1{
+    margin-top: 40px;
+    font-size: 40px;
+    font-family: 'Righteous';
+}
+.inicio .contenido h2{
+    font-size: 15px;
+    font-weight: normal;
+}
+.acercademi{
+    background-image: linear-gradient(#17082e 0, #1a0933 10%, #1a0933 70%, #0c1f4c 100%);
+    background-size: cover;
+    height: 100vh;
+}
+
+.acercademi .info h2 {
+    font-family: 'Righteous';
+    display: block;
+    text-align:center;
+}
+.acercademi .info h3 {
+    font-family: 'Righteous';
+    display: block;
+    text-align:center;}
+.acercademi .info h5 {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    display: block;
+    text-align: center;
+}
+.acercademi .info li {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    display: block;
+    text-align: center;
+}
+.contacto{
+    background-image: linear-gradient(#17082e 0, #1a0933 10%, #1a0933 70%, #0c1f4c 100%);
+    background-size: cover;
+    height: 100vh;
+}
+.contacto .info h2 {
+    font-family: 'Righteous';
+    display: block;
+    text-align: center;
+}
+.contacto .info li {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    display: block;
+    text-align: center;
+}
+.habilidades {
+    background-image: linear-gradient(#17082e 0, #1a0933 10%, #1a0933 70%, #0c1f4c 100%);
+    background-size: cover;
+    height: 100vh;
+}
+
+.habilidades .info h2 {
+    font-family: 'Righteous';
+    text-align: center;
+    text-shadow: #32fbe2;
+}
+
+.habilidades .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.habilidades .card {
+    flex: 1 0 300px; 
+    margin: 10px;
+}
+
+.border-custom {
+    border: 10px solid #170229;
+    box-shadow: 0 0 10px #32fbe2;
+}
+.diseños{
+    background-image: linear-gradient(#17082e 0, #1a0933 5%, #1a0933 50%, #0c1f4c 100%);
+    height: 100vh;
+}
+.diseños .info h1 {
+    font-family: 'Righteous';
+    text-align:center;
+}
+.diseños .carousel-item img {
+    width: 80%; 
+    height: auto; 
+    max-width: 800px; 
+    margin: auto;
+}
+.juegos{
+    background-image: linear-gradient(#17082e 0, #1a0933 5%, #1a0933 50%, #0c1f4c 100%);
+    height: 100vh;
+}
+.juegos .info h1 {
+    font-family: 'Righteous';
+    text-align:center;
+}
+.juegos .carousel-item img {
+    width: 80%; 
+    height: auto; 
+    max-width: 800px; 
+    margin: auto;
+}
