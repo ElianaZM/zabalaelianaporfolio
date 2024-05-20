@@ -209,6 +209,24 @@
     max-width: 800px; 
     margin: auto;
 }
+.grid{
+  width: 200px;
+  height: 200px;
+  display:flex;
+  flex-wrap: wrap;
+  border-style: solid;
+}
+.grid div{
+  width:20px;
+  height: 20px;
+}
+.snake{
+  background-color: rgb(255, 255, 255);
+}
+.apple{
+  background-color: rgb(203, 14, 14);
+}
+
 .video-container {
   position: absolute;
   top:0;
