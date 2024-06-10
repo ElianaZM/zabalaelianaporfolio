@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulario de Contacto</title>
     <link rel="stylesheet" href="estilo.css">
     <link rel="stylesheet" href="bootstrap.min.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-custom" data-bs-theme="light">
+    <nav class="navbar navbar-expand-lg navbar-custom" data-theme="bs-light">
         <div class="container-fluid">
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav ml-auto">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse mr-auto" id="navbarNavDropdown">
+                <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link active" href="index.html">Inicio</a>
                     </li>
@@ -24,15 +27,14 @@
                     <li class="nav-item">
                         <a class="nav-link" href="habilidades.html">Habilidades</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="fondovideo.html">Fondovideo</a>
-                    </li>
+                   
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Proyectos</a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="diseños.html">Diseños</a></li>
                             <li><a class="dropdown-item" href="juegos.html">Juegos</a></li>
                             <li><a class="dropdown-item" href="videoaudio.html">Video y audio</a></li>
+                            <li><a class="dropdown-item" href="calculadora.html">Calculadora</a></li>
                             <li><hr class="dropdown-divider"></li>
                         </ul>
                     </li>
@@ -40,21 +42,57 @@
             </div>
         </div>
     </nav>
-        <section  class="contacto">
-            <div class="info">
-                <h2> Contacto</h2>
-                <ul>
-                    <h4>
-                    <li>Correo: elianazabala9@gmail.com </li> 
-                    <li>Instagram de diseño: <a href="https://www.instagram.com/designbyeli_?igsh=ZnZkMHo2bnNhbjV4">designbyeli_</a> </li>
-                    <li><img src="imagenes/designbyeli__qr.png" width="250px" height="250px" alt=""></li>
-                    </h4>
-                    
-                </ul>
+    <section class="contacto">
+        <div class="container">
+            <h1>Contacto</h1>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" name="name" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje</label>
+                    <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+            <div class="redes-sociales">
+                <h4>Mis redes</h4>
+                <ul class="enlaces enlaces_redes">
+                    <li class="enlaces__item">
+                        <a class="enlaces__enlace enlaces__enlace_footer" href="https://github.com/ElianaZM" target="_blank">
+                            <img class="enlaces__icono" src="imagenes/git.png" alt="logo de github" title="github" />
+                        </a>
+                    </li>
+                    <li class="enlaces__item">
+                        <a class="enlaces__enlace enlaces__enlace_footer" href="https://www.instagram.com/designbyeli_?igsh=ZnZkMHo2bnNhbjV4" target="_blank">
+                            <img class="enlaces__icono" src="imagenes/ig.png" alt="logo de instagram" title="instagram" />
+                        </a>
+                    </li>
                 
+                </ul>
             </div>
-        </section>
-    </div> 
+        </div>
+    </section>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var message = document.getElementById('message').value;
+
+            var emailContent = 'Nombre: ' + name + '\n';
+            emailContent += 'Correo Electrónico: ' + email + '\n';
+            emailContent += 'Mensaje: ' + message;
+
+            window.location.href = 'mailto:elianazabala9@gmail.com?subject=Formulario de Contacto&body=' + encodeURIComponent(emailContent);
+        });
+    </script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>

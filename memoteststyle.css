@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container-fluid {
+    background-color: #32fbe2;
+    font-family: 'Roboto';
+    color: #170229; 
+  }
+
+  .navbar-toggler-icon {
+    color: whitesmoke;
+    filter: invert(1); 
+    
+}
+#juego {
+    opacity: 0.6;
+    width: 600px;
+    height: 600px;
+    margin-left: 500px;
+    margin-top: 50px;
+   
+}
+
+table {
+    width: 100%;
+    height: 100%;
+    
+}
+
+td {
+    width: 25%;
+    height: 25%;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.botones {
+    margin-left: 700px;
+    margin-top: 40px;
+}
+
+input {
+    width: 100px;
+    height: 40px;
+    background-color: #32fbe2;
+    color: rgb(34, 34, 34);
+    font-family:'Work Sans', sans-serif'
+    
+}
+
+p {
+    margin-left: 640px;
+    color: #32fbe2;
+    font: 50px bold;
+}

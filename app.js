@@ -1,13 +1,14 @@
-const btn =document.querySelector('.switch-btn')
-const video =document.querySelector('.video-container')
+document.addEventListener("DOMContentLoaded", function() {
+  const video = document.querySelector(".video-container");
+  const playPauseBtn = document.querySelector(".switch-btn");
 
-btn.addEventListener('click', function(){
-  if(!btn.classList.contains("slide")){
-    btn.classList.add("slide");
-    video.pause();
-  }  
-  else{
-    btn.classList.remove("slide");
-    video.play();
-  }
-})
+  playPauseBtn.addEventListener("click", function() {
+      if (video.paused) {
+          video.play();
+          playPauseBtn.innerHTML = '<span>pause</span>'; // Cambia el contenido del botón a "pause"
+      } else {
+          video.pause();
+          playPauseBtn.innerHTML = '<span>play</span>'; // Cambia el contenido del botón a "play"
+      }
+  });
+});
