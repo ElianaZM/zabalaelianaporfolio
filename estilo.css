@@ -185,6 +185,7 @@
 }
 .diseños {
     background-image: linear-gradient(#17082e 0, #1a0933 5%, #1a0933 50%, #0c1f4c 100%);
+    background-size: cover;
     height: 100vh;
 }
 
