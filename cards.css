@@ -1,0 +1,29 @@
+
+.card {
+    --size: 64px;
+  
+    display: inline-grid;
+    place-items: center;
+   
+    grid-template-columns: var(--size) 1fr;
+    border: 5px solid #aaa;
+    border-bottom-color: slateblue;
+    border-right-color: #32fbe2;
+    border-radius: var(--size);
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    background: #fff;
+
+  
+    & img {
+      width: var(--size);
+      height: var(--size);
+
+    }
+  
+    & span {
+      font-family: 'Work Sans', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+  }
