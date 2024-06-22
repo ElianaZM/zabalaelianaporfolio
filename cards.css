@@ -1,4 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+.container-fluid {
+  background-color: #32fbe2;
+  font-family: 'Roboto';
+  color: #170229; 
+}
 
+.navbar-toggler-icon {
+  color: whitesmoke;
+  filter: invert(1); 
+  
+}
+.cardspromts{
+  background-image: linear-gradient(#17082e 0, #1a0933 10%, #1a0933 70%, #0c1f4c 100%);
+  background-size: cover;
+    height: 100vh;
+}
+.cardspromts .info h2 {
+  font-family: 'Work Sans', sans-serif;
+  text-align: center;
+  color: #32fbe2;
+  text-shadow: #32fbe2;
+}
 .card {
     --size: 64px;
   
